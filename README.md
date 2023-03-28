@@ -1,0 +1,1 @@
+# Vim configuration for VSCode
