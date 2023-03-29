@@ -1,0 +1,41 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+	{
+		"key": "ctrl+alt+j",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+alt+down",
+		"command": "-editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+alt+k",
+		"command": "editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+alt+up",
+		"command": "-editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+f ctrl+p",
+		"command": "prettier.forceFormatDocument"
+	},
+	{
+		"key": "ctrl+v h",
+		"command": "workbench.action.navigateDown"
+	},
+	{
+		"key": "ctrl+f r",
+		"command": "editor.action.startFindReplaceAction",
+		"when": "editorFocus || editorIsOpen"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "-editor.action.startFindReplaceAction",
+		"when": "editorFocus || editorIsOpen"
+	}
+]

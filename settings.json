@@ -138,6 +138,10 @@
 			"commands": [":tabp"]
 		},
 		{
+			"before": ["<S-l>"],
+			"commands": [":tabnext"]
+		},
+		{
 			"before": ["<C-j>"],
 			"commands": ["workbench.action.navigateDown"]
 		},
@@ -152,6 +156,10 @@
 		{
 			"before": ["<C-l>"],
 			"commands": ["workbench.action.navigateRight"]
+		},
+		{
+			"before": ["<leader>", "f", "f"],
+			"commands": ["workbench.action.quickOpen"]
 		}
 	]
 }
