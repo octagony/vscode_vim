@@ -20,7 +20,7 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+f ctrl+p",
+		"key": "ctrl+alt+f",
 		"command": "prettier.forceFormatDocument"
 	},
 	{

@@ -164,6 +164,18 @@
 		{
 			"before": ["<leader>", "r", "n"],
 			"commands": ["editor.action.rename"]
+		},
+		{
+			"before": ["<leader>", "a", "f"],
+			"commands": ["editor.action.autoFix"]
+		},
+		{
+			"before": ["<leader>", "p", "d"],
+			"commands": ["editor.action.peekDefinition"]
+		},
+		{
+			"before": ["<leader>", "g", "d"],
+			"commands": ["editor.action.revealDefinition"]
 		}
 	],
 	"vim.visualModeKeyBindings": [
