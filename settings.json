@@ -107,7 +107,7 @@
 		},
 		{
 			"before": ["<leader>", "e"],
-			"commands": ["workbench.view.explorer"]
+			"commands": ["workbench.action.toggleSidebarVisibility"]
 		},
 		{
 			"before": ["<leader>", "q"],
@@ -160,6 +160,20 @@
 		{
 			"before": ["<leader>", "f", "f"],
 			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<leader>", "r", "n"],
+			"commands": ["editor.action.rename"]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": [">"],
+			"commands": ["editor.action.indentLines"]
+		},
+		{
+			"before": ["<"],
+			"commands": ["editor.action.outdentLines"]
 		}
 	]
 }
