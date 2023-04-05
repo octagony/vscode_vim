@@ -20,7 +20,7 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+alt+f",
+		"key": "ctrl+f f",
 		"command": "prettier.forceFormatDocument"
 	},
 	{
@@ -58,11 +58,54 @@
 		"when": "openFolderWorkspaceSupport"
 	},
 	{
-		"key": "ctrl+alt+p",
+		"key": "ctrl+s p",
 		"command": "workbench.action.showCommands"
 	},
 	{
 		"key": "ctrl+shift+p",
 		"command": "-workbench.action.showCommands"
+	},
+	{
+		"key": "ctrl+s k",
+		"command": "workbench.action.openGlobalKeybindings"
+	},
+	{
+		"key": "ctrl+k ctrl+s",
+		"command": "-workbench.action.openGlobalKeybindings"
+	},
+	{
+		"key": "a",
+		"command": "explorer.newFile",
+		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "f",
+		"command": "explorer.newFolder",
+		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "d",
+		"command": "deleteFile",
+		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "o",
+		"command": "filesExplorer.openFilePreserveFocus",
+		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "y",
+		"command": "filesExplorer.copy",
+		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "p",
+		"command": "filesExplorer.paste",
+		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
 	}
 ]

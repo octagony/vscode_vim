@@ -78,7 +78,6 @@
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.sideBar.location": "right",
 	"workbench.colorTheme": "Catppuccin Mocha",
-	"workbench.iconTheme": "material-icon-theme",
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
