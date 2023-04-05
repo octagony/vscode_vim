@@ -101,6 +101,10 @@
 	],
 	"vim.normalModeKeyBindings": [
 		{
+			"before": ["<leader>", "s", "a"],
+			"commands": ["editor.action.selectAll"]
+		},
+		{
 			"before": ["<leader>", "w"],
 			"commands": ["workbench.action.files.save"]
 		},

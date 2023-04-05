@@ -106,6 +106,14 @@
 	{
 		"key": "ctrl+h",
 		"command": "workbench.action.focusActiveEditorGroup",
-		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+		"when": "workbench.explorer.openEditorsView.active || filesExplorerFocus && vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "ctrl+c",
+		"command": "vim.remap",
+		"when": "inputFocus && vim.mode == 'Normal'",
+		"args": {
+			"after": ["y", "y"]
+		}
 	}
 ]
