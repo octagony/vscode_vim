@@ -93,6 +93,7 @@
 	"vim.useSystemClipboard": true,
 	"vim.useCtrlKeys": true,
 	"vim.hlsearch": true,
+	"vim.highlightedyank.enable": true,
 	"vim.insertModeKeyBindings": [
 		{
 			"before": ["j", "k"],

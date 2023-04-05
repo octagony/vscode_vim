@@ -24,10 +24,6 @@
 		"command": "prettier.forceFormatDocument"
 	},
 	{
-		"key": "ctrl+v h",
-		"command": "workbench.action.navigateDown"
-	},
-	{
 		"key": "ctrl+f r",
 		"command": "editor.action.startFindReplaceAction",
 		"when": "editorFocus || editorIsOpen"
@@ -115,5 +111,9 @@
 		"args": {
 			"after": ["y", "y"]
 		}
+	},
+	{
+		"key": "ctrl+v",
+		"command": "-editor.action.clipboardPasteAction"
 	}
 ]

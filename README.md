@@ -12,7 +12,7 @@ The [VSCodeVim plugin](https://github.com/VSCodeVim/Vim) and this set of keybind
 
 - Most of the key bindings set for VSCode copy my own key bindings for Nvim. I recommend looking at [this repository](https://github.com/octagony/dev_files) where my configuration files are stored
 
-- If you feel you don't know enough to use Vim well, I recommended [this great article](https://betterprogramming.pub/50-vim-mode-tips-for-ide-users-f7b525a794b3) by Sebastian Carlos which details Vim best practices
+- If you feel you don't know enough to use Vim well, i recommended [this great article](https://betterprogramming.pub/50-vim-mode-tips-for-ide-users-f7b525a794b3) by Sebastian Carlos which details Vim best practices
 
 ## Installation
 
@@ -24,7 +24,7 @@ The [VSCodeVim plugin](https://github.com/VSCodeVim/Vim) and this set of keybind
 
 4. Copy keybindigs.json and settings.json files from repository to directory where the VSCode configuration files are stored. In my case it is `.config/VSCodium/User`
 
-5.
+5. Enjoy!
 
 ### Where to see configuration files?
 
