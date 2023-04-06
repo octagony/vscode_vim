@@ -72,32 +72,27 @@
 	{
 		"key": "a",
 		"command": "explorer.newFile",
-		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
 	},
 	{
 		"key": "f",
 		"command": "explorer.newFolder",
-		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
 	},
 	{
 		"key": "d",
 		"command": "deleteFile",
-		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
-	},
-	{
-		"key": "o",
-		"command": "filesExplorer.openFilePreserveFocus",
-		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
 	},
 	{
 		"key": "y",
 		"command": "filesExplorer.copy",
-		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
 	},
 	{
 		"key": "p",
 		"command": "filesExplorer.paste",
-		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
 	},
 	{
 		"key": "ctrl+h",
@@ -117,11 +112,6 @@
 		"command": "-editor.action.clipboardPasteAction"
 	},
 	{
-		"key": "space",
-		"command": "-filesExplorer.openFilePreserveFocus",
-		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
-	},
-	{
 		"key": "ctrl+s h",
 		"command": "editor.action.showHover",
 		"when": "editorTextFocus"
@@ -130,5 +120,10 @@
 		"key": "ctrl+k ctrl+i",
 		"command": "-editor.action.showHover",
 		"when": "editorTextFocus"
+	},
+	{
+		"key": "space o",
+		"command": "filesExplorer.openFilePreserveFocus",
+		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
 	}
 ]
