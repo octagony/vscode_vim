@@ -125,5 +125,10 @@
 		"key": "space o",
 		"command": "filesExplorer.openFilePreserveFocus",
 		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+	},
+	{
+		"key": "g c c",
+		"command": "editor.action.commentLine",
+		"when": "editor.TextFocus && !editorReadonly"
 	}
 ]
