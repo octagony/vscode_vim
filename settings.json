@@ -166,6 +166,10 @@
 			"commands": ["workbench.action.quickOpen"]
 		},
 		{
+			"before": ["<leader>", "f", "s"],
+			"commands": ["workbench.action.findInFiles"]
+		},
+		{
 			"before": ["<leader>", "r", "n"],
 			"commands": ["editor.action.rename"]
 		},
@@ -180,6 +184,10 @@
 		{
 			"before": ["<leader>", "g", "d"],
 			"commands": ["editor.action.revealDefinition"]
+		},
+		{
+			"before": ["<S-k>"],
+			"commands": ["editor.action.showHover"]
 		}
 	],
 	"vim.visualModeKeyBindings": [

@@ -115,5 +115,20 @@
 	{
 		"key": "ctrl+v",
 		"command": "-editor.action.clipboardPasteAction"
+	},
+	{
+		"key": "space",
+		"command": "-filesExplorer.openFilePreserveFocus",
+		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+	},
+	{
+		"key": "ctrl+s h",
+		"command": "editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+k ctrl+i",
+		"command": "-editor.action.showHover",
+		"when": "editorTextFocus"
 	}
 ]
