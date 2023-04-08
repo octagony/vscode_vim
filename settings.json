@@ -24,7 +24,7 @@
 	"editor.lineHeight": 25,
 	"editor.fontLigatures": true,
 	"editor.fontFamily": "JetBrains Mono, monospace",
-	"terminal.integrated.fontFamily": "JetBrains Mono, monospace",
+	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, monospace",
 	"terminal.integrated.fontSize": 15,
 	"terminal.integrated.tabs.enabled": false,
 	"explorer.confirmDelete": false,
@@ -77,13 +77,15 @@
 	"workbench.editor.tabSizing": "shrink",
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.sideBar.location": "right",
-	"workbench.colorTheme": "Catppuccin Mocha",
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"window.menuBarVisibility": "toggle",
-	"window.zoomLevel": 1,
 	"window.restoreWindows": "none",
+	"workbench.colorTheme": "Catppuccin Frappé",
+	"workbench.iconTheme": "catppuccin-frappe",
+	"terminal.external.linuxExec": "alacritty",
+	"window.zoomLevel": 1,
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact"
 	},
@@ -144,22 +146,6 @@
 		{
 			"before": ["<S-l>"],
 			"commands": [":tabnext"]
-		},
-		{
-			"before": ["<C-j>"],
-			"commands": ["workbench.action.navigateDown"]
-		},
-		{
-			"before": ["<C-k>"],
-			"commands": ["workbench.action.navigateUp"]
-		},
-		{
-			"before": ["<C-h>"],
-			"commands": ["workbench.action.navigateLeft"]
-		},
-		{
-			"before": ["<C-l>"],
-			"commands": ["workbench.action.navigateRight"]
 		},
 		{
 			"before": ["<leader>", "f", "f"],

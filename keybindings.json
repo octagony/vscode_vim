@@ -72,32 +72,72 @@
 	{
 		"key": "a",
 		"command": "explorer.newFile",
-		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "f",
 		"command": "explorer.newFolder",
-		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "d",
 		"command": "deleteFile",
-		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "y",
 		"command": "filesExplorer.copy",
-		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "p",
 		"command": "filesExplorer.paste",
-		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "x",
+		"command": "filesExplorer.cut",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "r",
+		"command": "renameFile",
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "ctrl+h",
 		"command": "workbench.action.focusActiveEditorGroup",
 		"when": "workbench.explorer.openEditorsView.active || filesExplorerFocus && vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.navigateUp",
+		"when": "vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.files.action.focusOpenEditorsView",
+		"when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "workbench.action.navigateRight",
+		"when": "vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.navigateDown",
+		"when": "vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.files.action.focusFilesExplorer",
+		"when": "!editorFocus && workbench.explorer.openEditorsView.active && vim.active && vim.mode!='Insert'"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "workbench.action.navigateLeft",
+		"when": "vim.active && vim.mode!='Insert'"
 	},
 	{
 		"key": "ctrl+c",
@@ -130,5 +170,29 @@
 		"key": "g c c",
 		"command": "editor.action.commentLine",
 		"when": "editor.TextFocus && !editorReadonly"
+	},
+	{
+		"key": "] d",
+		"command": "editor.action.marker.next",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+f8",
+		"command": "-editor.action.marker.next",
+		"when": "editorFocus"
+	},
+	{
+		"key": "[ d",
+		"command": "editor.action.marker.prev",
+		"when": "editorFocus"
+	},
+	{
+		"key": "shift+alt+f8",
+		"command": "-editor.action.marker.prev",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+alt+s",
+		"command": "workbench.files.action.focusFilesExplorer"
 	}
 ]
