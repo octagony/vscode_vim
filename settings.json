@@ -82,8 +82,8 @@
 	},
 	"window.menuBarVisibility": "toggle",
 	"window.restoreWindows": "none",
-	"workbench.colorTheme": "Catppuccin Frappé",
-	"workbench.iconTheme": "catppuccin-frappe",
+	"workbench.colorTheme": "Catppuccin Mocha",
+	"workbench.iconTheme": "catppuccin-mocha",
 	"terminal.external.linuxExec": "alacritty",
 	"window.zoomLevel": 1,
 	"emmet.includeLanguages": {
@@ -184,6 +184,14 @@
 		{
 			"before": ["<"],
 			"commands": ["editor.action.outdentLines"]
+		},
+		{
+			"before": ["<S-j>"],
+			"commands": ["editor.action.moveLinesDownAction"]
+		},
+		{
+			"before": ["<S-k>"],
+			"commands": ["editor.action.moveLinesUpAction"]
 		}
 	]
 }
