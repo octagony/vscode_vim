@@ -1,0 +1,26 @@
+{
+	"type": {
+		"scope": "typescriptreact, typescript",
+		"prefix": "type",
+		"body": ["type ${TM_FILENAME_BASE} { ", "	${1}", "}"],
+		"description": "create a new type"
+	},
+	"inter": {
+		"scope": "typescriptreact, typescript",
+		"prefix": "inter",
+		"body": ["interface I${TM_FILENAME_BASE} { ", "	${1}", "}"],
+		"description": "create a new interface"
+	},
+	"extype": {
+		"scope": "typescriptreact, typescript",
+		"prefix": "extype",
+		"body": ["export type ${TM_FILENAME_BASE} { ", "	${1}", "}"],
+		"description": "create a new type for export"
+	},
+	"exinter": {
+		"scope": "typescriptreact, typescript",
+		"prefix": "exinter",
+		"body": ["export interface I${TM_FILENAME_BASE} { ", "	${1}", "}"],
+		"description": "create a new interface for export"
+	},
+}

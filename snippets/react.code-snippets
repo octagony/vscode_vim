@@ -1,0 +1,14 @@
+{
+	"hook": {
+		"scope": "javascriptreact, typescriptreact",
+		"prefix": "hook",
+		"body": ["export const ${TM_FILENAME_BASE} = () => ${1}"],
+		"description": "create a new hook"
+	},
+	"imrs": {
+		"scope": "javascriptreact, typescriptreact",
+		"prefix": "imrs",
+		"body": ["import styles from './${1}${TM_FILENAME_BASE}.module.scss'"],
+		"description": "add import styles module"
+	},
+}

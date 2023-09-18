@@ -1,0 +1,94 @@
+{
+	"tafce": {
+		"scope": "typescriptreact",
+		"prefix": "tafce",
+		"body": [
+			"import { FC } from 'react'",
+			"",
+			"const ${TM_FILENAME_BASE}: FC = () => {",
+			"  return <div>${1}${TM_FILENAME_BASE}</div>",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE}"
+		],
+		"description": "create a new typescript component"
+	},
+	"tafcei": {
+		"scope": "typescriptreact",
+		"prefix": "tafcei",
+		"body": [
+			"import { FC } from 'react'",
+			"",
+			"interface I${TM_FILENAME_BASE} {${1}}",
+			"",
+			"const ${TM_FILENAME_BASE}: FC<I${TM_FILENAME_BASE}> = ({${2}}) => {",
+			"  return <div>${3}${TM_FILENAME_BASE}</div>",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE}"
+		],
+		"description": "create a new typescript component with interface"
+	},
+	"tafcec": {
+		"scope": "typescriptreact",
+		"prefix": "tafcec",
+		"body": [
+			"import { FC, PropsWithChildren } from 'react'",
+			"",
+			"const ${TM_FILENAME_BASE}: FC<PropsWithChildren<unknown>> = () => {",
+			"  return <div>${1}${TM_FILENAME_BASE}</div>",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE}"
+		],
+		"description": "create a new hoc typescript component"
+	},
+	"nafce": {
+		"scope": "typescriptreact",
+		"prefix": "nafce",
+		"body": [
+			"import { FC } from 'react'",
+			"import { Text, View } from 'react-native'",
+			"",
+			"const ${TM_FILENAME_BASE}: FC = () => {",
+			" return (",
+			"  <View>",
+			"   <Text>${1}${TM_FILENAME_BASE}</Text>",
+			"  </View>",
+			"  )",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE}"
+		],
+		"description": "create a new react native typescript component"
+	},
+	"nafcec": {
+		"scope": "typescriptreact",
+		"prefix": "nafcec",
+		"body": [
+			"import { FC, PropsWithChildren } from 'react'",
+			"import { View } from 'react-native'",
+			"",
+			"const ${TM_FILENAME_BASE}: FC<PropsWithChildren<unknown>> = ({children}) => {",
+			"  return <View>${1}{children}</View>",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE}"
+		],
+		"description": "create a new react native HOC typescript component"
+	},
+	"tafcen": {
+		"scope": "typescriptreact",
+		"prefix": "tafcen",
+		"body": [
+			"import { NextPage } from 'next'",
+			"",
+			"const ${TM_FILENAME_BASE}Page: NextPage = () => {",
+			"  return <div>${1}${TM_FILENAME_BASE}</div>",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE}Page"
+		],
+		"description": "create a new next typescript page"
+	}
+}
