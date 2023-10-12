@@ -22,7 +22,7 @@ The [VSCodeVim plugin](https://github.com/VSCodeVim/Vim) and this set of keybind
 
 3. Install [VSCodeVim plugin](https://github.com/VSCodeVim/Vim)
 
-4. Copy keybindigs.json and settings.json files from repository to directory where the VSCode configuration files are stored. In my case it is `.config/VSCodium/User`
+4. Copy keybindigs.json and settings.json files from repository to directory where the VSCode configuration files are stored. In my case it is `.config/{VSCodium,Code}/User`
 
 5. Enjoy!
 
