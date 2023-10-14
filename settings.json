@@ -1,9 +1,19 @@
 {
-	"window.openFilesInNewWindow": "off",
+	//Window
+	"window.zoomLevel": 1,
+
+	// Menubar Visibility (VSCODE)
+	"window.menuBarVisibility": "toggle",
+
+	//Editor
 	"editor.tabSize": 2,
-	"editor.lineNumbers": "relative",
+	"editor.fontSize": 16,
+	"editor.lineHeight": 24,
+	"editor.fontLigatures": true,
+	"editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
 	"editor.wordWrap": "bounded",
 	"editor.wrappingIndent": "same",
+	"editor.lineNumbers": "relative",
 	"editor.wordWrapColumn": 60,
 	"editor.folding": false,
 	"editor.insertSpaces": false,
@@ -11,84 +21,81 @@
 	"editor.minimap.enabled": false,
 	"editor.detectIndentation": true,
 	"editor.suggestSelection": "first",
-	"editor.scrollBeyondLastLine": true,
-	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.scrollBeyondLastLine": false,
 	"editor.renderControlCharacters": false,
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 	"editor.quickSuggestionsDelay": 0,
-	"editor.bracketPairColorization.enabled": false,
+	"editor.cursorBlinking": "solid",
 	"editor.glyphMargin": false,
+	"editor.bracketPairColorization.enabled": false,
 	"editor.scrollbar.horizontal": "hidden",
 	"editor.scrollbar.vertical": "hidden",
-	"editor.fontSize": 16,
-	"editor.lineHeight": 25,
-	"editor.fontLigatures": true,
-	"editor.fontFamily": "JetBrains Mono, monospace",
-	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, monospace",
-	"terminal.integrated.fontSize": 15,
+	"editor.hideCursorInOverviewRuler": true,
+	"editor.unicodeHighlight.allowedCharacters": {
+		"а": true,
+		"с": true,
+		"Т": true,
+		"б": true,
+		"е": true
+	},
+
+	//Editor settings for formatting
+	"editor.formatOnSave": true,
+
+	//Workbench
+	"workbench.colorTheme": "Catppuccin Mocha",
+	"workbench.iconTheme": "catppuccin-mocha",
+	"workbench.startupEditor": "none",
+	"window.openFilesInNewWindow": "off",
+	"workbench.sideBar.location": "right",
+	"workbench.activityBar.visible": false,
+
+	// Terminal
+	"terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.tabs.enabled": false,
+
+	//Explorer
 	"explorer.confirmDelete": false,
 	"explorer.compactFolders": false,
 	"explorer.confirmDragAndDrop": false,
+
+	//Emmet
 	"emmet.triggerExpansionOnTab": true,
 	"emmet.showExpandedAbbreviation": "never",
-	"debug.toolBarLocation": "hidden",
-	"debug.focusWindowOnBreak": false,
-	"debug.showInlineBreakpointCandidates": false,
-	"debug.showBreakpointsInOverviewRuler": false,
-	"prettier.semi": false,
+
+	//Formatters
+	"prettier.semi": true,
 	"prettier.useTabs": true,
-	"editor.formatOnSave": true,
-	"prettier.singleQuote": true,
-	"prettier.jsxSingleQuote": true,
-	"editor.codeActionsOnSave": {
-		"source.organizeImports": true
-	},
+	"prettier.singleQuote": false,
+	"prettier.jsxSingleQuote": false,
 	"prettier.arrowParens": "avoid",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"eslint.packageManager": "yarn",
-	"files.associations": { "*.scss": "postcss", "*.module.scss": "postcss" },
 	"editor.inlineSuggest.enabled": true,
-	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
+
+	// Files settings
+	"files.associations": { "*.scss": "postcss", "*.module.scss": "postcss" },
+
+	//Prisma Formatter
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
 	},
-	"breadcrumbs.icons": false,
-	"breadcrumbs.showKeys": false,
-	"breadcrumbs.showFiles": false,
-	"breadcrumbs.symbolPath": "off",
-	"breadcrumbs.showArrays": false,
-	"breadcrumbs.showEvents": false,
-	"breadcrumbs.showFields": false,
-	"breadcrumbs.showClasses": false,
-	"breadcrumbs.showMethods": false,
-	"breadcrumbs.showBooleans": false,
-	"breadcrumbs.showFunctions": false,
-	"breadcrumbs.showConstants": false,
-	"breadcrumbs.showEnumMembers": false,
-	"breadcrumbs.showConstructors": false,
+
+	//Breadcrumbs Off
+	"breadcrumbs.enabled": false,
+
+	// Java/Typescript
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	"typescript.preferences.quoteStyle": "single",
-	"javascript.preferences.quoteStyle": "single",
-	"javascript.format.semicolons": "remove",
-	"typescript.format.semicolons": "remove",
+	"typescript.preferences.quoteStyle": "double",
+	"javascript.preferences.quoteStyle": "double",
+	"javascript.format.semicolons": "insert",
+	"typescript.format.semicolons": "insert",
 	"typescript.suggest.paths": false,
 	"javascript.suggest.paths": false,
-	"workbench.editor.tabSizing": "shrink",
-	"workbench.startupEditor": "newUntitledFile",
-	"workbench.sideBar.location": "right",
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"window.menuBarVisibility": "toggle",
-	"window.restoreWindows": "none",
-	"workbench.colorTheme": "Catppuccin Mocha",
-	"workbench.iconTheme": "catppuccin-mocha",
-	"terminal.external.linuxExec": "alacritty",
-	"window.zoomLevel": 1,
-	"emmet.includeLanguages": {
-		"javascript": "javascriptreact"
-	},
+
+	// Telemetry (VSCODE)
+	"telemetry.telemetryLevel": "off",
 	"vim.leader": "<space>",
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -164,12 +171,20 @@
 			"commands": ["editor.action.autoFix"]
 		},
 		{
-			"before": ["<leader>", "p", "d"],
+			"before": ["<leader>", "g", "d"],
 			"commands": ["editor.action.peekDefinition"]
 		},
 		{
-			"before": ["<leader>", "g", "d"],
-			"commands": ["editor.action.revealDefinition"]
+			"before": ["<leader>", "r", "a"],
+			"commands": ["editor.action.rename"]
+		},
+		{
+			"before": ["<leader>", "f", "m"],
+			"commands": ["editor.action.format"]
+		},
+		{
+			"before": ["<leader>", "c", "a"],
+			"commands": ["editor.action.quickFix"]
 		},
 		{
 			"before": ["<S-k>"],
