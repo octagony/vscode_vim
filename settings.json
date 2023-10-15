@@ -159,6 +159,10 @@
 			"commands": ["workbench.action.quickOpen"]
 		},
 		{
+			"before": ["<leader>", "f", "b"],
+			"commands": ["workbench.action.showAllEditors"]
+		},
+		{
 			"before": ["<leader>", "f", "s"],
 			"commands": ["workbench.action.findInFiles"]
 		},
@@ -169,10 +173,6 @@
 		{
 			"before": ["<leader>", "a", "f"],
 			"commands": ["editor.action.autoFix"]
-		},
-		{
-			"before": ["<leader>", "g", "d"],
-			"commands": ["editor.action.peekDefinition"]
 		},
 		{
 			"before": ["<leader>", "r", "a"],

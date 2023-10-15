@@ -167,6 +167,11 @@
 		"when": "editor.TextFocus && !editorReadonly"
 	},
 	{
+		"key": "g d",
+		"command": "editor.action.revealDefinition",
+		"when": "vim.mode == 'Normal' && editorHasDefinitionProvider && editorTextFocus && !isEmbeddedEditor"
+	},
+	{
 		"key": "] d",
 		"command": "editor.action.marker.next",
 		"when": "editorFocus && vim.mode == 'Normal'"
