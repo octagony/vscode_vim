@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Create a new app w/Vite",
+			"type": "shell",
+			"command": "npm create vite@latest"
+		},
+		{
+			"label": "Clean npm cache",
+			"type": "shell",
+			"command": "npm cache clean --force"
+		},
+		{
+			"label": "Clean node modules",
+			"type": "shell",
+			"command": "rm -rf node_modules",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new",
+				"close": true
+			}
+		},
+		{
+			"label": "Delete .lock file and use <npm>",
+			"type": "shell",
+			"command": "rm -rf node_modules && rm -rf yarn.lock && npm i",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new",
+				"close": true
+			}
+		},
+		{
+			"label": "Delete .lock file and use <yarn>",
+			"type": "shell",
+			"command": "rm -rf node_modules && rm -rf package-lock.json && yarn",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new",
+				"close": true
+			}
+		}
+	]
+}

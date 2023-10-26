@@ -1,212 +1,214 @@
 {
-	//Window
-	"window.zoomLevel": 1,
+  //Window
+  "window.zoomLevel": 1,
 
-	// Menubar Visibility (VSCODE)
-	"window.menuBarVisibility": "toggle",
+  // Menubar Visibility (VSCODE)
+  "window.menuBarVisibility": "toggle",
 
-	//Editor
-	"editor.tabSize": 2,
-	"editor.fontSize": 16,
-	"editor.lineHeight": 24,
-	"editor.fontLigatures": true,
-	"editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
-	"editor.wordWrap": "bounded",
-	"editor.wrappingIndent": "same",
-	"editor.lineNumbers": "relative",
-	"editor.wordWrapColumn": 60,
-	"editor.folding": false,
-	"editor.insertSpaces": false,
-	"editor.smoothScrolling": false,
-	"editor.minimap.enabled": false,
-	"editor.detectIndentation": true,
-	"editor.suggestSelection": "first",
-	"editor.scrollBeyondLastLine": false,
-	"editor.renderControlCharacters": false,
-	"editor.unicodeHighlight.ambiguousCharacters": false,
-	"editor.quickSuggestionsDelay": 0,
-	"editor.cursorBlinking": "solid",
-	"editor.glyphMargin": false,
-	"editor.bracketPairColorization.enabled": false,
-	"editor.scrollbar.horizontal": "hidden",
-	"editor.scrollbar.vertical": "hidden",
-	"editor.hideCursorInOverviewRuler": true,
-	"editor.unicodeHighlight.allowedCharacters": {
-		"а": true,
-		"с": true,
-		"Т": true,
-		"б": true,
-		"е": true
-	},
+  "window.density.editorTabHeight": "compact",
 
-	//Editor settings for formatting
-	"editor.formatOnSave": true,
+  //Editor
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+  "editor.wordWrap": "bounded",
+  "editor.wrappingIndent": "same",
+  "editor.lineNumbers": "relative",
+  "editor.wordWrapColumn": 60,
+  "editor.folding": false,
+  "editor.insertSpaces": false,
+  "editor.smoothScrolling": false,
+  "editor.minimap.enabled": false,
+  "editor.detectIndentation": true,
+  "editor.suggestSelection": "first",
+  "editor.scrollBeyondLastLine": false,
+  "editor.renderControlCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.cursorBlinking": "solid",
+  "editor.glyphMargin": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "а": true,
+    "с": true,
+    "Т": true,
+    "б": true,
+    "е": true
+  },
 
-	//Workbench
-	"workbench.colorTheme": "Catppuccin Mocha",
-	"workbench.iconTheme": "catppuccin-mocha",
-	"workbench.startupEditor": "none",
-	"window.openFilesInNewWindow": "off",
-	"workbench.sideBar.location": "right",
-	"workbench.activityBar.visible": false,
+  //Editor settings for formatting
+  "editor.formatOnSave": true,
 
-	// Terminal
-	"terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
-	"terminal.integrated.fontSize": 14,
-	"terminal.integrated.tabs.enabled": false,
+  //Workbench
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.startupEditor": "none",
+  "window.openFilesInNewWindow": "off",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.visible": false,
 
-	//Explorer
-	"explorer.confirmDelete": false,
-	"explorer.compactFolders": false,
-	"explorer.confirmDragAndDrop": false,
+  // Terminal
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.tabs.enabled": false,
 
-	//Emmet
-	"emmet.triggerExpansionOnTab": true,
-	"emmet.showExpandedAbbreviation": "never",
+  //Explorer
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
 
-	//Formatters
-	"prettier.semi": true,
-	"prettier.useTabs": true,
-	"prettier.singleQuote": false,
-	"prettier.jsxSingleQuote": false,
-	"prettier.arrowParens": "avoid",
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.inlineSuggest.enabled": true,
+  //Emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showExpandedAbbreviation": "never",
 
-	// Files settings
-	"files.associations": { "*.scss": "postcss", "*.module.scss": "postcss" },
+  //Formatters
+  "prettier.semi": true,
+  "prettier.useTabs": true,
+  "prettier.singleQuote": false,
+  "prettier.jsxSingleQuote": false,
+  "prettier.arrowParens": "avoid",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.enabled": true,
 
-	//Prisma Formatter
-	"[prisma]": {
-		"editor.defaultFormatter": "Prisma.prisma"
-	},
+  // Files settings
+  "files.associations": { "*.scss": "postcss", "*.module.scss": "postcss" },
 
-	//Breadcrumbs Off
-	"breadcrumbs.enabled": false,
+  //Prisma Formatter
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
 
-	// Java/Typescript
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"typescript.preferences.quoteStyle": "double",
-	"javascript.preferences.quoteStyle": "double",
-	"javascript.format.semicolons": "insert",
-	"typescript.format.semicolons": "insert",
-	"typescript.suggest.paths": false,
-	"javascript.suggest.paths": false,
+  //Breadcrumbs Off
+  "breadcrumbs.enabled": false,
 
-	// Telemetry (VSCODE)
-	"telemetry.telemetryLevel": "off",
-	"vim.leader": "<space>",
-	"vim.easymotion": true,
-	"vim.incsearch": true,
-	"vim.useSystemClipboard": true,
-	"vim.useCtrlKeys": true,
-	"vim.hlsearch": true,
-	"vim.highlightedyank.enable": true,
-	"vim.insertModeKeyBindings": [
-		{
-			"before": ["j", "k"],
-			"after": ["<Esc>"]
-		}
-	],
-	"vim.normalModeKeyBindings": [
-		{
-			"before": ["<leader>", "s", "a"],
-			"commands": ["editor.action.selectAll"]
-		},
-		{
-			"before": ["<leader>", "w"],
-			"commands": ["workbench.action.files.save"]
-		},
-		{
-			"before": ["<leader>", "e"],
-			"commands": ["workbench.action.toggleSidebarVisibility"]
-		},
-		{
-			"before": ["<leader>", "q"],
-			"commands": ["workbench.action.closeActiveEditor"]
-		},
-		{
-			"before": ["<leader>", "h"],
-			"commands": [":nohl"]
-		},
-		{
-			"before": ["<leader>", "s", "v"],
-			"commands": ["workbench.action.splitEditor"]
-		},
-		{
-			"before": ["<leader>", "s", "h"],
-			"commands": ["workbench.action.splitEditorDown"]
-		},
-		{
-			"before": ["<leader>", "t", "o"],
-			"commands": [":tabnew"]
-		},
-		{
-			"before": ["<leader>", "t", "x"],
-			"commands": [":tabclose"]
-		},
-		{
-			"before": ["<S-h>"],
-			"commands": [":tabp"]
-		},
-		{
-			"before": ["<S-l>"],
-			"commands": [":tabnext"]
-		},
-		{
-			"before": ["<leader>", "f", "f"],
-			"commands": ["workbench.action.quickOpen"]
-		},
-		{
-			"before": ["<leader>", "f", "b"],
-			"commands": ["workbench.action.showAllEditors"]
-		},
-		{
-			"before": ["<leader>", "f", "s"],
-			"commands": ["workbench.action.findInFiles"]
-		},
-		{
-			"before": ["<leader>", "r", "n"],
-			"commands": ["editor.action.rename"]
-		},
-		{
-			"before": ["<leader>", "a", "f"],
-			"commands": ["editor.action.autoFix"]
-		},
-		{
-			"before": ["<leader>", "r", "a"],
-			"commands": ["editor.action.rename"]
-		},
-		{
-			"before": ["<leader>", "f", "m"],
-			"commands": ["editor.action.format"]
-		},
-		{
-			"before": ["<leader>", "c", "a"],
-			"commands": ["editor.action.quickFix"]
-		},
-		{
-			"before": ["<S-k>"],
-			"commands": ["editor.action.showHover"]
-		}
-	],
-	"vim.visualModeKeyBindings": [
-		{
-			"before": [">"],
-			"commands": ["editor.action.indentLines"]
-		},
-		{
-			"before": ["<"],
-			"commands": ["editor.action.outdentLines"]
-		},
-		{
-			"before": ["<S-j>"],
-			"commands": ["editor.action.moveLinesDownAction"]
-		},
-		{
-			"before": ["<S-k>"],
-			"commands": ["editor.action.moveLinesUpAction"]
-		}
-	]
+  // Java/Typescript
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.quoteStyle": "double",
+  "javascript.preferences.quoteStyle": "double",
+  "javascript.format.semicolons": "insert",
+  "typescript.format.semicolons": "insert",
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+
+  // Telemetry (VSCODE)
+  "telemetry.telemetryLevel": "off",
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "s", "a"],
+      "commands": ["editor.action.selectAll"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "s", "v"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["<leader>", "s", "h"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<leader>", "t", "o"],
+      "commands": [":tabnew"]
+    },
+    {
+      "before": ["<leader>", "t", "x"],
+      "commands": [":tabclose"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": [":tabp"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":tabnext"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "f", "b"],
+      "commands": ["workbench.action.showAllEditors"]
+    },
+    {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "a", "f"],
+      "commands": ["editor.action.autoFix"]
+    },
+    {
+      "before": ["<leader>", "r", "a"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "f", "m"],
+      "commands": ["editor.action.format"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<S-k>"],
+      "commands": ["editor.action.showHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["<S-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<S-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }
+  ]
 }
